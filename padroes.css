@@ -1,0 +1,566 @@
+.caixa-conteudo {clear:both;float:left;width:100%;margin-bottom:5px;}
+.menu-btn-frame .menu-btn-square {display:inline-block;padding:5px;width:20px;text-align:center;z-index:10001;line-height:4px;}
+.menu-btn-frame .menu-btn-square span {display:inline-block;width:4px;height:4px;background-color:#555;margin:1px;}
+.menu-btn-frame:hover {cursor:pointer;background-color:#555;color:#fff;}
+.menu-btn-frame:hover .menu-btn-line span, .menu-btn-frame:hover .menu-btn-square span,
+.menu-btn-frame:hover .menu-btn-list span {background-color:#fff!important;}
+/* ---- */
+.menu-btn-frame .menu-btn-line {padding:0 5px;width:20px;z-index:10001;}
+.menu-btn-frame .menu-btn-line span {display:block;width:100%;height:3px;background-color:#555;margin:5px 0;}
+/* ---- */
+.menu-btn-frame .menu-btn-list {padding:5px;width:20px;z-index:10001;line-height:3px;}
+.menu-btn-frame .menu-btn-list span {display:inline-block;width:75%;height:3px;background-color:#555;margin:2px 0;}
+.menu-btn-frame .menu-btn-list span:nth-child(odd) {width:15%;margin:2px 10% 2px 0;}
+/* ---- */
+.menu-btn-frame {display:inline-block;position:relative;float:right;margin:4px;}
+.menu-btn-frame ul
+{
+    display:none;
+    position:absolute;
+    margin:-1px 0 0 -140px;
+    padding:1px!important;
+    background-color:#555;
+    z-index:10000;
+}
+.menu-btn-frame ul li {display:block;width:148px;background:url('../images/bgTrans10.png');margin-bottom:1px;padding:5px 10px;} 
+.menu-btn-frame ul li:last-child {margin:0;}
+.menu-btn-frame ul li a {display:block;}
+.menu-btn-frame ul li:hover {background-image:url('../images/bgTrans20.png');}
+.menu-btn-frame ul li span {display:block;white-space:nowrap;font-size:1.15em;line-height:1.5em;color:#fff;}
+.menu-btn-frame:hover ul {display:block;}
+.menu-btn-frame ul li span:hover {text-decoration:underline;}
+.menu-btn-frame .grp {background-image:url('none')!important;font-weight:bold;text-transform:uppercase;color:#fff;}
+.menu-btn-frame .grp:hover {cursor:default;}
+.menu-btn-frame .act {background-image:url('../images/bgTrans40.png');}
+ 
+.menu-btn-frame-left {float:left;margin-right:5px;}
+.menu-btn-frame-right {float:right;}
+.menu-btn-frame-left ul {margin-left:0!important;}
+.menu-btn-frame-right ul {margin-left:-140px!important;}
+/* ---- */
+.titulo-caixa-menu 
+{
+    clear:both;
+    float:left;
+    width:100%;
+    border-top:1px solid #ccc;
+    margin-bottom:10px; 
+    position:relative;
+    background:url('../images/bgTrans90.png');
+    text-align:left;
+}
+.titulo-caixa-menu:hover {background-image:url('../images/bgTrans80.png')}
+.titulo-caixa-menu .titulo {display:inline-block;text-decoration:none;font-family:"Oswald", arial;padding:0 2% 5px 2%;}
+.titulo-caixa-menu .titulo span {font-size:2.3em;text-transform:lowercase;}
+.titulo-caixa .layout1, .titulo-caixa .layout2 .titulo {border-top-width:3px;border-top-style:solid;}
+
+/* ---- */
+.titulo-caixa-small {font-size:.8em!important;;}
+.titulo-caixa-medium {font-size:1.1em!important;}
+.titulo-caixa-large {font-size:1.5em!important;}
+.titulo-caixa-small .menu-btn-frame .menu-btn-line {padding-top:0;padding-bottom:0;}
+.titulo-caixa-medium .menu-btn-frame .menu-btn-line {padding-top:3px;padding-bottom:3px;}
+.titulo-caixa-large .menu-btn-frame .menu-btn-line {padding-top:6px;padding-bottom:6px;}
+
+.titulo-caixa-medium .menu-btn-frame ul li span,
+.titulo-caixa-large .menu-btn-frame ul li span {font-size:1em;}
+
+.ajx-loading {text-align:center;}
+.ajx-loading img {height:50px;margin-right:10px;vertical-align:middle;}
+
+.hover-transition
+{
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out; 
+    transition: 0.3s ease-out;
+}
+.hover-transition:hover
+{
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out; 
+    transition: 0.3s ease-out;
+}
+.hover-transition-img img
+{ 
+    -webkit-transition: 0.3s ease-out;-moz-transition: 0.3s ease-out;-o-transition: 0.3s ease-out;transition: 0.3s ease-out;
+}
+.hover-transition-img:hover img
+{
+    -webkit-transition: 0.3s ease-out;-moz-transition: 0.3s ease-out;-o-transition: 0.3s ease-out;transition: 0.3s ease-out;
+    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform:scale(1.1);
+} 
+
+.sec-name, .mat-title, .cat-name, .vid-name, .enq-pergunta {font-weight:bold;}
+.sec-name, .cat-name {text-transform:uppercase;font-size:.9em;color:#006AB0;display:inline-block;margin-bottom:5px;}
+.cat-name {font-size:1.2em;}
+.mat-title, .vid-title, enq-pergunta {display:block;font-size:1.2em;}
+.mat-summary {color:#555;display:block;font-weight:normal;font-size:.9em;}
+.enq-pergunta .enq-publicacao {display:block;font-weight:normal;text-align:center;color:#999;padding:5px 0 15px 0;font-size:.6em;}
+.enq-alternativas {font-size:.8em;}
+.sec-name:hover, .cat-name:hover {text-decoration:underline;}
+
+.cal-data, .cal-title {font-weight:bold;}
+.cal-data {color:#fff;display:inline-block;padding:3px 5px;margin:0 10px 5px 0;} 
+.cal-local {text-transform:uppercase;display:inline-block;}
+.cal-title {display:block;font-size:1.1em;}
+
+.cla-title {font-weight:bold;text-transform:lowercase;font-size:.9em;display:block;color:#000;}
+.cla-category {color:#000;display:inline-block;font-size:.9em;} 
+/* --- */
+.materia-caixa {float:left;width:100%;position:relative;padding:0 0 15px 0;margin-bottom:15px;border-bottom:1px solid #eaeaea;text-align:left;}
+
+.materia-caixa-col-2 .materia-caixa {width:48%;margin:0 2% 15px 0;}
+.materia-caixa-col-2 .materia-caixa:nth-child(even) {float:right;margin-right:0;}
+
+.materia-caixa .mat-image, .materia-caixa .mat-text {display:block;float:left;min-height:105px;}
+.materia-caixa .mat-text {width:65%;}
+.materia-caixa .mat-image {width:35%;}
+
+.materia-caixa-sem-foto .mat-text {width:100%;}
+.materia-caixa-sem-foto .mat-image {display:none;}
+
+.materia-caixa .mat-image img {width:90%;}
+.materia-caixa .mat-text .mat-summary {padding-top:5px;}
+.materia-caixa .mat-position {display:none;position:absolute;right:0;bottom:0;padding:2px 5px;background-color:#eaeaea;color:#555;}
+
+.CaixaMateriasUltimas .materia-caixa .mat-summary,
+.CaixaMateriasMaisLidas .materia-caixa .mat-summary,
+.CaixaMateriasMaisComentadas .materia-caixa .mat-summary {display:none;}
+.CaixaMateriasMaisLidas .materia-caixa .mat-position,
+.CaixaMateriasMaisComentadas .materia-caixa .mat-position {display:inline-block;}
+
+.CaixaMateriasPorSecao .materia-caixa .mat-summary {padding-top:5px;}
+
+.materia-calendario-caixa {clear:both;float:left;width:100%;padding:0 0 15px 0;margin-bottom:15px;border-bottom:1px solid #eaeaea;}
+
+/* --- */
+.classificado-caixa {background-color:#fff;border:1px solid #eaeaea;margin-bottom:15px;}    
+.classificado-caixa .img {display:block;width:100%;height:80px;overflow:hidden;border-bottom:1px solid #f5f5f5;}
+.classificado-caixa .img img {border:0;width:100%;}
+.classificado-caixa div {padding:10px;overflow:hidden;} 
+.classificado-caixa div .txt {clear:both;display:block;height:50px;overflow:hidden;}
+.classificado-caixa div .txt a {padding-bottom:5px;display:block;} 
+.classificado-caixa div .txt a:hover {text-decoration:underline;}
+.classificado-caixa div .loc 
+{
+    clear:both;display:block;padding-top:5px;
+    text-align:center;border-top:1px dotted #ccc;color:#555;
+    overflow:hidden;font-size:.8em;
+}
+
+.CaixaClassificados {clear:both;float:left;width:100%;margin-bottom:15px;}
+.CaixaClassificados .classificado-caixa {width:48%;float:left;} 
+.CaixaClassificados .classificado-caixa:nth-child(even) {float:right;}
+.CaixaClassificados .classificado-caixa .img img {height:80px;}
+
+.CaixaClassificados .rodape {clear:both;float:left;width:100%;}   
+.CaixaClassificados .btn {padding:5px 0!important;width:100%;text-align:center;text-transform:uppercase;}
+
+.CaixaVagasRecentes, .CaixaCurriculosRecentes {clear:both;} 
+.CaixaVagasRecentes .qdo ul li, .CaixaCurriculosRecentes .qdo ul li {padding:0 0 10px 0;border-bottom:1px solid #eaeaea;margin-bottom:10px;}
+.CaixaVagasRecentes .qdo ul li a, .CaixaCurriculosRecentes .qdo ul li a {display:block;}
+.CaixaVagasRecentes .qdo ul li a span, .CaixaCurriculosRecentes .qdo ul li a span {font-weight:bold;}
+
+.CaixaVagasPorNivelHierarquico, .CaixaCurriculosPorNivelHierarquico {clear:both;float:left;width:100%;margin-bottom:15px;}
+    
+.CaixaVagasPorNivelHierarquico .sub-titulo, .CaixaCurriculosPorNivelHierarquico .sub-titulo
+{display:block;text-align:center;}
+
+.CaixaVagasPorNivelHierarquico .sub-titulo .total-cadastros label, 
+.CaixaCurriculosPorNivelHierarquico .sub-titulo .total-cadastros label
+{
+    display:inline-block;
+    font-size:1.7em;
+    font-weight:bold;     
+}
+.CaixaVagasPorNivelHierarquico .sub-titulo .txt, .CaixaCurriculosPorNivelHierarquico .sub-titulo .txt
+{display:inline-block;color:#ccc;font-size:1.2em;}
+    
+.CaixaVagasPorNivelHierarquico .meio, .CaixaCurriculosPorNivelHierarquico .meio
+{clear:both;background:url('../images/bgTrans40.png') #eaeaea;}
+
+.CaixaVagasPorNivelHierarquico .rodape, .CaixaCurriculosPorNivelHierarquico .rodape
+{clear:both;float:left;width:100%;background:url('../images/bgTrans90.png') #eaeaea;font-weight:bold;}
+
+.CaixaVagasPorNivelHierarquico .rodape .total-ativos, .CaixaCurriculosPorNivelHierarquico .rodape .total-ativos
+{display:block;float:left;padding:5px 0 5px 10px;}
+
+.CaixaVagasPorNivelHierarquico .rodape a, .CaixaCurriculosPorNivelHierarquico .rodape a
+{display:inline-block;float:right;}
+
+.CaixaVagasPorNivelHierarquico tr table tr td, .CaixaCurriculosPorNivelHierarquico tr table tr td
+{line-height:25px!important;background:url('../images/bgTrans70.png');padding:0 1px;white-space:nowrap;}
+
+.CaixaVagasPorNivelHierarquico tr table tr:nth-child(odd) td, .CaixaCurriculosPorNivelHierarquico tr table tr:nth-child(odd) td
+{background:url('../images/bgTrans90.png');}
+
+.CaixaVagasPorNivelHierarquico tr table td span, .CaixaCurriculosPorNivelHierarquico tr table td span
+{font-size:11px;color:#555;}
+
+.CaixaVagasPorNivelHierarquico tr table td .nh, .CaixaCurriculosPorNivelHierarquico tr table td .nh
+{width:80%;}
+
+.CaixaVagasPorNivelHierarquico tr table td .qtd, .CaixaCurriculosPorNivelHierarquico tr table td .qtd
+{width:20%;text-align:right;}
+
+.CaixaVagasPorNivelHierarquico tr table td a, .CaixaCurriculosPorNivelHierarquico tr table td a
+{display:block;padding:0;color:#000;}
+
+.video-caixa {float:left;width:23%;position:relative;background-color:#f5f5f5;margin:0 2.6667% 15px 0;text-align:left;}
+.video-caixa:nth-child(4n) {float:right;margin-right:0;}
+.video-caixa .vid-image, .video-caixa .vid-text {display:block;float:left;}
+.video-caixa .vid-image {clear:both;width:100%;}
+.video-caixa .vid-text {clear:both;width:94%;height:82px;position:relative;font-size:.8em;padding:0 3%;overflow:hidden;}
+
+.video-caixa .vid-image span {display:inline-block;width:100%;height:120px;overflow:hidden;}
+.video-caixa .vid-image img {width:100%;}
+.video-caixa .vid-text {font-weight:bold;}
+.video-caixa .vid-star {position:absolute;bottom:5px;}
+.video-caixa .vid-star img {height:13px;margin:0 1px;}
+.video-caixa .vid-position {display:none;position:absolute;right:0;bottom:0;padding:2px 5px;background-color:#eaeaea;color:#555;}
+
+.CaixaVideosMaisVistos .video-caixa .vid-position {display:inline-block;}
+
+.video-caixa-col-2 .video-caixa {width:48%;margin:0 2% 15px 0;}
+.video-caixa-col-2 .video-caixa:nth-child(even) {float:right;margin-right:0;}
+
+.mvLateral .grp {color:#555;} 
+.pagTitulo, .frmSubTitulo {color:#555;border-color:#555;}
+.pagCriarConta h2 {margin:0;}
+.pagCriarConta .frmCad #qdoPF .PFLiEConcordo {display:none;}
+.padrao-ead .pagCriarConta .frmCad #qdoPF .PFLiEConcordo {display:inline-block;}
+.pagCriarConta .frmEsqueceu #txtEsqDocNumero, .pagCriarConta .frmEsqueceu .frm-retorno, 
+.pagCriarConta .frmEsqueceu .frm-retorno div, .pagCriarConta .frmEsqueceu .frm-retorno-notok {display:none;}
+.pagCriarConta .frmEsqueceu .frm .clickSMS:hover, .pagCriarConta .frmEsqueceu .frm .lnk-fale-conosco:hover
+{cursor:pointer;text-decoration:underline;}
+
+.pagCriarConta #qdoPF {display:block;}
+
+/* padrão empresa */
+.padrao-emp a {color:#333;}
+.padrao-emp a:hover {color:#00786A!important;;}
+.padrao-emp-color {color:#00786A!important;}
+.padrao-emp-bg-color {background-color:#00786A!important;}
+.padrao-emp-border-color {border-color:#00786A!important;}
+.padrao-emp .titulo-caixa-menu,
+.padrao-emp .titulo-caixa-menu .titulo {border-color:#00786A!important;}
+.padrao-emp .titulo-caixa-menu .titulo span {color:#00786A;}
+.padrao-emp .titulo-caixa-menu,
+.padrao-emp .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-emp .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-emp .titulo-caixa-menu .menu-btn-frame:hover {background-color:#00786A;}
+.padrao-emp .frmCenter .menu-lat-btn {background-color:#00786A;}
+.padrao-emp .mvLateral .grp {color:#00786A;} 
+.padrao-emp .pagTitulo, .padrao-emp .frmSubTitulo {color:#00786A;border-color:#00786A;}
+.padrao-emp .Lista .ListaTitulo, .padrao-emp .Lista .ListaRow, .padrao-emp .Lista .ListaAltRow {background-color:#00786A;}
+.padrao-emp .CaixaBolsaDeEmpregosEmpresa .quadro-inner input[type="text"],
+.padrao-emp .CaixaBolsaDeEmpregosEmpresa .quadro-inner input[type="password"],
+.padrao-emp .CaixaBolsaDeEmpregosEmpresa .quadro-inner textarea, 
+.padrao-emp .CaixaBolsaDeEmpregosEmpresa .quadro-inner select {background:url('../images/bgTrans80.png') #00786A;}
+.padrao-emp .formAbas {background:#00786A;}
+
+/* padrão usuário */
+.padrao-usu a {color:#333;}
+.padrao-usu a:hover {color:#046293!important;}
+.padrao-usu-color {color:#046293!important;}
+.padrao-usu-bg-color {background-color:#046293!important;}
+.padrao-usu-border-color {border-color:#046293!important;}
+.padrao-usu .titulo-caixa-menu,
+.padrao-usu .titulo-caixa-menu .titulo {border-color:#046293!important;}
+.padrao-usu .titulo-caixa-menu .titulo span {color:#046293;}
+.padrao-usu .titulo-caixa-menu,
+.padrao-usu .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-usu .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-usu .titulo-caixa-menu .menu-btn-frame:hover {background-color:#046293;}
+.padrao-usu .frmCenter .menu-lat-btn {background-color:#046293;}
+.padrao-usu .mvLateral .grp {color:#046293;}
+.padrao-usu .pagTitulo, .padrao-usu .frmSubTitulo {color:#046293;border-color:#046293;}
+.padrao-usu .Lista .ListaTitulo {background-color:#046293;}
+.padrao-usu .CaixaBolsaDeEmpregosCandidato .quadro-inner input[type="text"],
+.padrao-usu .CaixaBolsaDeEmpregosCandidato .quadro-inner input[type="password"],
+.padrao-usu .CaixaBolsaDeEmpregosCandidato .quadro-inner textarea,
+.padrao-usu .CaixaBolsaDeEmpregosCandidato .quadro-inner select {background:url('../images/bgTrans80.png') #046293;}
+.padrao-usu .formAbas {background-color:#046293;}
+
+/* padrão portal */
+.lblPortalNome, .lblDominioEmail {font-weight:bold;color:#012E57;}
+.padrao-por-color {color:#006AB0!important;}
+.padrao-por-bg-color {background-color:#006AB0!important;}
+.padrao-por-border-color {border-color:#006AB0!important;}
+.padrao-por #Topo #TopoBarraServicos {background-color:#006AB0;border-color:#032747;}
+.padrao-por #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#032747;}
+.padrao-por #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#032747!important;}
+.padrao-por #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-por #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#006AB0;}
+.padrao-por #Topo .menuServicos {border-color:#006AB0;}
+.padrao-por #Topo .menuServicos ul li a {color:#006AB0;}
+.padrao-por #Topo .menuServicos ul .por {background-color:#006AB0;}
+.padrao-por .carrinho .qdoAbas {background-color:#006AB0;}
+.padrao-por .titulo-caixa-menu,
+.padrao-por .titulo-caixa-menu .titulo {border-color:#006AB0!important;}
+.padrao-por .titulo-caixa-menu .titulo span {color:#006AB0;}
+.padrao-por .titulo-caixa-menu {background-color:#fff;}
+.padrao-por .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-por .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-por .titulo-caixa-menu .menu-btn-frame:hover {background-color:#006AB0;}
+.padrao-por .frmCenter .menu-lat-btn {background-color:#555;}
+.padrao-por .mvLateral .grp {color:#555;}
+.padrao-por .pagTitulo, .padrao-por .frmSubTitulo {color:#555;border-color:#555;}
+.padrao-por .Lista .ListaTitulo, .padrao-por .Lista .ListaRow, .padrao-por .Lista .ListaAltRow {background-color:#006AB0;}
+.padrao-por .pagCriarConta h2, .padrao-por .pagCriarConta p span,
+.padrao-por .pagCriarConta .clickSMS, .padrao-por .pagCriarConta .lnk-fale-conosco {color:#006AB0;}
+.padrao-por .formAbas {background-color:#006AB0;}
+
+/* padrão b2c */
+.padrao-b2c a {color:#333;}
+.padrao-b2c a:hover {color:#7B4548!important;}
+.padrao-b2c-color {color:#7B4548!important;}
+.padrao-b2c-bg-color {background-color:#7B4548!important;}
+.padrao-b2c-border-color {border-color:#7B4548!important;}
+.padrao-b2c #Topo #TopoBarraServicos {background-color:#7B4548;border-color:#80420B;}
+.padrao-b2c #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#5C3436;}
+.padrao-b2c #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#5C3436!important;}
+.padrao-b2c #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-b2c #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#7B4548;}
+.padrao-b2c #Topo .menuServicos {border-color:#7B4548;}
+.padrao-b2c #Topo .menuServicos ul li a {color:#7B4548;}
+.padrao-b2c #Topo .menuServicos ul .b2c {background-color:#7B4548;}
+.padrao-b2c .carrinho .qdoAbas {background-color:#7B4548;}
+.padrao-b2c .titulo-caixa-menu,
+.padrao-b2c .titulo-caixa-menu .titulo {border-color:#7B4548!important;}
+.padrao-b2c .titulo-caixa-menu .titulo span {color:#7B4548;}
+.padrao-b2c .titulo-caixa-menu,
+.padrao-b2c .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-b2c .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-b2c .titulo-caixa-menu .menu-btn-frame:hover {background-color:#7B4548;}
+.padrao-b2c .frmCenter .menu-lat-btn {background-color:#7B4548;}
+.padrao-b2c .pagCriarConta h2, .padrao-b2c .pagCriarConta p span,
+.padrao-b2c .pagCriarConta .clickSMS, .padrao-b2c .pagCriarConta .lnk-fale-conosco {color:#7B4548;}
+.padrao-b2c .formAbas {background-color:#7B4548;}
+
+/* padrão bolsa */
+.padrao-bol a {color:#333;} 
+.padrao-bol a:hover {color:#012E57!important;}
+.padrao-bol-color {color:#012E57!important;}
+.padrao-bol-bg-color {background-color:#012E57!important;}
+.padrao-bol-border-color {border-color:#012E57!important;}
+.padrao-bol #Topo #TopoBarraServicos {background-color:#012E57;border-color:#012E57;}
+.padrao-bol #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#001B33;}
+.padrao-bol #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#012E57!important;}
+.padrao-bol #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-bol #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#012E57;}
+.padrao-bol #Topo .menuServicos {border-color:#012E57;}
+.padrao-bol #Topo .menuServicos ul li a {color:#012E57;}
+.padrao-bol #Topo .menuServicos ul .bol {background-color:#012E57;}
+.padrao-bol .carrinho .qdoAbas {background-color:#012E57;}
+.padrao-bol .titulo-caixa-menu,
+.padrao-bol .titulo-caixa-menu .titulo {border-color:#012E57!important;}
+.padrao-bol .titulo-caixa-menu .titulo span {color:#012E57;}
+.padrao-bol .titulo-caixa-menu,
+.padrao-bol .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-bol .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-bol .titulo-caixa-menu .menu-btn-frame:hover {background-color:#012E57;}
+.padrao-bol .frmCenter .menu-lat-btn {background-color:#012E57;}
+.padrao-bol .pagCriarConta h2, .padrao-bol .pagCriarConta p span,
+.padrao-bol .pagCriarConta .clickSMS, .padrao-bol .pagCriarConta .lnk-fale-conosco {color:#012E57;}
+.padrao-bol .formAbas {background-color:#012E57;}
+
+/* padrão classificados */
+.padrao-cla a {color:#333;}
+.padrao-cla a:hover {color:#E2BD22!important;}
+.padrao-cla-color {color:#E2BD22!important;}
+.padrao-cla-bg-color {background-color:#E2BD22!important;}
+.padrao-cla-border-color {border-color:#E2BD22!important;}
+.padrao-cla #Topo #TopoBarraServicos {background-color:#E2BD22;border-color:#E2BD22;}
+.padrao-cla #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#A58816;}
+.padrao-cla #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#A58816!important;}
+.padrao-cla #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-cla #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#E2BD22;}
+.padrao-cla #Topo .menuServicos {border-color:#E2BD22;}
+.padrao-cla #Topo .menuServicos ul li a {color:#E2BD22;} 
+.padrao-cla #Topo .menuServicos ul .cla {background-color:#E2BD22;}
+.padrao-cla .carrinho .qdoAbas {background-color:#E2BD22;}
+.padrao-cla .titulo-caixa-menu,
+.padrao-cla .titulo-caixa-menu .titulo {border-color:#E2BD22!important;}
+.padrao-cla .titulo-caixa-menu .titulo span {color:#E2BD22;}
+.padrao-cla .titulo-caixa-menu,
+.padrao-cla .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-cla .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-cla .titulo-caixa-menu .menu-btn-frame:hover {background-color:#E2BD22;}
+.padrao-cla .pagCriarConta h2, .padrao-cla .pagCriarConta p span,
+.padrao-cla .pagCriarConta .clickSMS, .padrao-cla .pagCriarConta .lnk-fale-conosco {color:#E2BD22;}
+
+/* padrão guia */ 
+.padrao-gui a {color:#333;}
+.padrao-gui a:hover {color:#E6A516!important;}
+.padrao-gui-color {color:#E6A516!important;}
+.padrao-gui-bg-color {background-color:#E6A516!important;}
+.padrao-gui-border-color {border-color:#E6A516!important;}
+.padrao-gui #Topo #TopoBarraServicos {background-color:#E6A516;border-color:#BF7E13;}
+.padrao-gui #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#BF7E13;}
+.padrao-gui #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#BF7E13!important;}
+.padrao-gui #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-gui #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#E6A516;}
+.padrao-gui #Topo .menuServicos {border-color:#BF7E13;}
+.padrao-gui #Topo .menuServicos ul li a {color:#BF7E13;}
+.padrao-gui #Topo .menuServicos ul .gui {background-color:#BF7E13;}
+.padrao-gui .carrinho .qdoAbas {background-color:#ECAD43;}
+.padrao-gui .titulo-caixa-menu,
+.padrao-gui .titulo-caixa-menu .titulo {border-color:#E6A516!important;}
+.padrao-gui .titulo-caixa-menu .titulo span {color:#E6A516;}
+.padrao-gui .titulo-caixa-menu,
+.padrao-gui .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-gui .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-gui .titulo-caixa-menu .menu-btn-frame:hover {background-color:#E6A516;}
+.padrao-gui .frmCenter .menu-lat-btn {background-color:#E6A516;}
+.padrao-gui .mvLateral .grp {color:#666;} 
+.padrao-gui .pagCriarConta h2, .padrao-gui .pagCriarConta p span,
+.padrao-gui .pagCriarConta .clickSMS, .padrao-gui .pagCriarConta .lnk-fale-conosco {color:#E6A516;}
+.padrao-gui .formAbas {background-color:#E6A516;}
+
+/* padrão ead */
+.padrao-ead a {color:#333;}
+.padrao-ead a:hover {color:#22806F!important;}
+.padrao-ead-color {color:#22806F!important;}
+.padrao-ead-bg-color {background-color:#22806F!important;}
+.padrao-ead-border-color {border-color:#1B6558!important;}
+.padrao-ead #Topo #TopoBarraServicos {background-color:#22806F;border-color:#1B6558;}
+.padrao-ead #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#1B6558;}
+.padrao-ead #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#1B6558!important;}
+.padrao-ead #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-ead #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#22806F;}
+.padrao-ead #Topo .menuServicos {border-color:#1B6558;}
+.padrao-ead #Topo .menuServicos ul li a {color:#1B6558;}
+.padrao-ead #Topo .menuServicos ul .ead {background-color:#1B6558;}
+.padrao-ead .carrinho .qdoAbas {background-color:#22806F;}
+.padrao-ead .titulo-caixa-menu,
+.padrao-ead .titulo-caixa-menu .titulo {border-color:#1B6558!important;}
+.padrao-ead .titulo-caixa-menu .titulo span {color:#1B6558;}
+.padrao-ead .titulo-caixa-menu,
+.padrao-ead .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-ead .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-ead .titulo-caixa-menu .menu-btn-frame:hover {background-color:#22806F;}
+.padrao-ead .frmCenter .menu-lat-btn {background-color:#22806F;}
+.padrao-ead .pagCriarConta h2, .padrao-ead .pagCriarConta p span,
+.padrao-ead .pagCriarConta .clickSMS, .padrao-ead .pagCriarConta .lnk-fale-conosco {color:#22806F;}
+.padrao-ead .formAbas {background-color:#22806F;}
+
+/* padrão vídeo */
+.padrao-vid a {color:#333;}
+.padrao-vid a:hover {color:#000!important;}
+.padrao-vid-color {color:#000!important;}
+.padrao-vid-bg-color {background-color:#000!important;}
+.padrao-vid-border-color {border-color:#000!important;}
+.padrao-vid #Topo #TopoBarraServicos {background-color:#000;border-color:#444;}
+.padrao-vid #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#444;}
+.padrao-vid #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#444!important;}
+.padrao-vid #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-vid #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#000;}
+.padrao-vid #Topo .menuServicos {border-color:#000;}
+.padrao-vid #Topo .menuServicos ul li a {color:#000;}
+.padrao-vid #Topo .menuServicos ul .vid {background-color:#000;}
+.padrao-vid .carrinho .qdoAbas {background-color:#000;}
+.padrao-vid .titulo-caixa-menu,
+.padrao-vid .titulo-caixa-menu .titulo {border-color:#000!important;}
+.padrao-vid .titulo-caixa-menu .titulo span {color:#000;}
+.padrao-vid .titulo-caixa-menu,
+.padrao-vid .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-vid .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-vid .titulo-caixa-menu .menu-btn-frame:hover {background-color:#000;}
+.padrao-vid .frmCenter .menu-lat-btn {background-color:#000;}
+
+/* padrão central */
+.padrao-cen a {color:#333;}
+.padrao-cen a:hover {color:#801638!important;}
+.padrao-cen-color {color:#801638!important;}
+.padrao-cen-bg-color {background-color:#801638!important;}
+.padrao-cen-border-color {border-color:#801638!important;}
+.padrao-cen #Topo #TopoBarraServicos {background-color:#801638;border-color:#550F25;}
+.padrao-cen #Topo #TopoBarraServicos .barra .AreaDoAssinante .btnLoginOk {background-color:#550F25;}
+.padrao-cen #Topo #TopoBarraServicos .barra .btn-entrar span {background-color:#550F25!important;}
+.padrao-cen #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .mp,
+.padrao-cen #Topo #TopoBarraServicos .barra .ddMenu .itens .site-menu .ms
+{background-color:#801638;}
+.padrao-cen #Topo .menuServicos {border-color:#801638;}
+.padrao-cen #Topo .menuServicos ul li a {color:#801638;}
+.padrao-cen #Topo .menuServicos ul .cen {background-color:#801638;}
+.padrao-cen .carrinho .qdoAbas {background-color:#801638;}
+.padrao-cen .titulo-caixa-menu,
+.padrao-cen .titulo-caixa-menu .titulo {border-color:#801638!important;}
+.padrao-cen .titulo-caixa-menu .titulo span {color:#801638;}
+.padrao-cen .titulo-caixa-menu,
+.padrao-cen .titulo-caixa-menu .menu-btn-frame div span, 
+.padrao-cen .titulo-caixa-menu .menu-btn-frame ul,
+.padrao-cen .titulo-caixa-menu .menu-btn-frame:hover {background-color:#801638;}
+.padrao-cen .frmCenter .menu-lat-btn {background-color:#801638;}
+.padrao-cen .pagCriarConta h2, .padrao-cen .pagCriarConta p span,
+.padrao-cen .pagCriarConta .clickSMS, .padrao-cen .pagCriarConta .lnk-fale-conosco {color:#801638;}
+.padrao-cen .formAbas {background-color:#801638;}
+.padrao-cen .pagCriarConta p span {color:#801638;}
+
+/* -------- */
+.barra-interacao {clear:both;float:left;width:100%;margin-bottom:15px;background-color:#fff;}
+.barra-interacao span {display:inline-block;vertical-align:middle;background-color:#ccc;margin:5px 0 5px 2px;}
+.barra-interacao label {display:inline-block;vertical-align:middle;text-transform:uppercase;color:#555;font-size:.8em;}
+.barra-interacao span img {height:15px;padding:5px 10px;}
+.barra-interacao span:hover {cursor:pointer;background-image:url('../images/bgTrans20.png');}
+
+.barra-interacao .r-social, .barra-interacao .comment, .barra-interacao .f-size {text-align:center;}
+ 
+.r-social .btnFacebook {background-color:#3B5998;}
+.r-social .btnTwitter {background-color:#27AADE;}
+.r-social .btnLinkedin {background-color:#1C87BD;}
+.r-social .btnWhatsApp {background-color:#65BC54;display:none!important;}
+.r-social .btnSend {background-color:#006AB0;}
+
+.barra-interacao .comment .comentar {display:inline-block;color:#000;line-height:35px;text-transform:uppercase;}
+.barra-interacao .comment .comentar img {height:20px;vertical-align:middle;margin-left:5px;}
+
+.barra-interacao .f-size {}
+.barra-interacao .f-size span {height:20px;width:30px;line-height:20px;text-align:center;padding:3px 0;}
+.barra-interacao .f-size .f-menos {font-size:.9em;}
+.barra-interacao .f-size .f-mais {font-size:1.2em;}
+/* -------- */
+
+.chk-input {display:inline-block;height:25px;line-height:25px;}
+.chk-input .chk {display:inline-block;height:25px;width:25px;vertical-align:middle;margin-right:10px;background:url('../images/chk-verde.png') no-repeat;background-size:100%;}
+.chk-input input[type="checkbox"] {display:none;}
+.chk-input:hover {cursor:pointer;}
+
+/* ----------- */
+
+@media only screen and (max-width:1024px){
+     .materia-caixa {clear:none;float:left;width:48%;margin:0 2% 15px 0;min-height:97px;}
+     .materia-caixa:nth-child(even) {float:right;margin-right:0;}
+     
+     .video-caixa .vid-image span {height:350px;}
+}
+ 
+@media only screen and (max-width:800px) 
+{
+    .video-caixa:nth-child(4n) {margin:0 0 10px 0;clear:right;}
+    .video-caixa {width:48%;margin:0 2% 10px 0;}
+    .video-caixa:nth-child(even) {float:right;margin-right:0;}
+    .video-caixa .vid-image span {height:250px;}
+    
+    .r-social .btnWhatsApp {display:inline-block!important;}
+}
+
+@media only screen and (max-width:640px) 
+{
+    .materia-caixa {clear:both;float:left;width:100%!important;margin:0 0 15px 0;}
+    .materia-caixa .mat-text, .materia-caixa .mat-image {clear:both;width:100%;margin:0;padding:0;height:auto;min-height:initial;}
+    .materia-caixa .mat-image {height:auto;overflow:hidden;margin-bottom:10px;}
+    .materia-caixa .mat-image img {width:100%;}
+    
+    .video-caixa .vid-image span {height:120px;}
+}

@@ -14,5 +14,7 @@
     <author href="http://cantini.com.br" email="cantini@cantini.com.br">
         Ricardo Cantini
     </author>
+        
+        <allow-navigation href="http://opticanet.com.br/" />
  
 </widget>

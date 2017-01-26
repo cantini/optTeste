@@ -16,5 +16,5 @@
     </author>
         
         <allow-navigation href="http://opticanet.com.br/" />
- 
+ <access origin="*" />
 </widget>

@@ -15,6 +15,11 @@
         Ricardo Cantini
     </author>
         
-        <allow-navigation href="http://opticanet.com.br/" />
- <access origin="*" />
+        <phonegap>
+    <access origin="http://127.0.0.1*"/>
+    <access origin="http://opticanet.com.br"/>
+    <access origin="http://*.phonegap.com"/>
+    <log level="DEBUG"/>
+</phonegap>
+<!-- <access origin="*" /> -->
 </widget>
